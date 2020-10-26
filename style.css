@@ -126,6 +126,64 @@ body {
   letter-spacing: 3rem;
 }
 
+html,
+body {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.coffee-parent {
+  width: 60rem;
+  height: 40rem;
+}
+
+.coffee-gallery {
+  margin: 3rem;
+  position: relative;
+}
+
+.coffee {
+  position: absolute;
+  height: 20rem;
+  -webkit-box-shadow: 0 1.5rem 1rem rbga(0, 0, 0, 0.4);
+          box-shadow: 0 1.5rem 1rem rbga(0, 0, 0, 0.4);
+  outline-offset: 1rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.coffee:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-box-shadow: 0 3rem 1rem rbga(0, 0, 0, 0.4);
+          box-shadow: 0 3rem 1rem rbga(0, 0, 0, 0.4);
+  outline: 1rem solid #00b0ff;
+}
+
+.coffee-gallery:hover .coffee:not(:hover) {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  opacity: 0.3;
+}
+
+.coffee-1 {
+  top: 10rem;
+  left: 15%;
+}
+
+.coffee-2 {
+  top: 2rem;
+  right: 0;
+}
+
+.coffee-3 {
+  top: -2rem;
+  left: 0;
+}
+
 .container {
   width: 80vw;
   margin: 2rem auto;

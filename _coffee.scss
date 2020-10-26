@@ -1,0 +1,45 @@
+@import "_variables.scss";
+
+.coffee-parent {
+  width: 60rem;
+  height: 40rem;
+}
+
+.coffee-gallery {
+  margin: 3rem;
+  position: relative;
+}
+
+.coffee {
+  position: absolute;
+  height: 20rem;
+  box-shadow: 0 1.5rem 1rem rbga(0, 0, 0, 0.4);
+  outline-offset: 1rem;
+  transition: all 0.3s;
+}
+
+.coffee:hover {
+  transform: scale(1.2);
+  box-shadow: 0 3rem 1rem rbga(0, 0, 0, 0.4);
+  outline: 1rem solid color(blue);
+}
+
+.coffee-gallery:hover .coffee:not(:hover) {
+  transform: scale(0.8);
+  opacity: 0.3;
+}
+
+.coffee-1 {
+  top: 10rem;
+  left: 15%;
+}
+
+.coffee-2 {
+  top: 2rem;
+  right: 0;
+}
+
+.coffee-3 {
+  top: -2rem;
+  left: 0;
+}
