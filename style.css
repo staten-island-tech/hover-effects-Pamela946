@@ -184,6 +184,51 @@ body {
   left: 0;
 }
 
+html,
+body {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.starfish {
+  height: 40rem;
+  position: relative;
+}
+
+.crinoid {
+  height: 30rem;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.crinoid-header {
+  font-size: 3rem;
+  opacity: 1;
+  color: #fff;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.starfish:hover .crinoid {
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
+}
+
+.starfish:hover .crinoid-header {
+  opacity: 1;
+  top: 40%;
+}
+
 .container {
   width: 80vw;
   margin: 2rem auto;
