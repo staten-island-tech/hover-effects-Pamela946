@@ -1,0 +1,13 @@
+@import "_variables.scss";
+
+.bee {
+  height: 20rem;
+  transition: all 0.3s;
+  border-radius: 50%;
+}
+
+.bee:hover {
+  border-radius: 0;
+  filter: sepia(75%);
+  transform: scale(1.1);
+}
