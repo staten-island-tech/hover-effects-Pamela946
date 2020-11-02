@@ -10,7 +10,6 @@
   margin: 1rem auto;
   font-size: 2rem;
   border-radius: 5rem;
-  transition: all 0.3s;
   position: relative;
 }
 
@@ -25,8 +24,10 @@
 }
 
 .btn:hover {
-  transform: scale(1.25);
-  box-shadow: 0 10px 0.5rem rgba(color(black), 0.6);
+  transition: all 2s;
+  -webkit-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .btn::after {
